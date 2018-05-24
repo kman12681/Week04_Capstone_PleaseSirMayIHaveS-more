@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+  </head>
+  <body>
+    
+    <h1>"Please sir, may I have s'more?"</h1>
+    
+    <div id="body">
+    <div class="image">
+    <img src="images/800px_COLOURBOX2787835.jpg"></div>
+    <div id="menu1" class ="menu" class="box"></div>
+    <div id="price1" class="price" class="box"></div>
+    <button onclick="AddToCart(items[0], prices[0]),SubTotal(prices[0])">Add to cart</button>  
+            
+    <div class="image">
+    <img src="images/1200px-Graham-Cracker-Stack.jpg"></div>
+    <div id="menu3" class="menu" class="box"></div>
+    <div id="price3" class="price" class="box"></div>
+    <button onclick="AddToCart(items[2], prices[2]),SubTotal(prices[2])">Add to cart</button>    
+    
+    <div class="image">
+    <img src="images/marsha.jpg"></div>
+    <div id="menu4" class="menu" class="box"></div>
+    <div id="price4" class="price" class="box"></div>  
+    <button onclick="AddToCart(items[3], prices[3]),SubTotal(prices[3])">Add to cart</button> 
+    
+    <div class="image">
+    <img src="images/milk.jpg"></div>
+    <div id="menu2" class="menu" class="box"></div>
+    <div id="price2" class="price" class="box"></div>
+    <button onclick="AddToCart(items[1], prices[1]),SubTotal(prices[1])">Add to cart</button>
+    
+    <div id="counter">Your Cart (0)</div>
+               
+        
+    <button id="checkout" onclick="Checkout()">Checkout</button>
+    <button id="clear" class ="clear" onclick="Clear()">Clear cart</button>
+    <div id="shoppingDiv">
+    <div id="cart" class="cart"></div>
+    <div id="empty"></div>
+    <div id="subTotal" class="cart"></div>
+    <div id="tax" class="cart"></div>
+    <div id="total" class="cart"></div> 
+    </div>
+    </div>
+      
+    
+    <script src="script.js"></script>
+  </body>
+</html>
